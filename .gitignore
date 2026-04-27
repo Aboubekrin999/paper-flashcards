@@ -1,0 +1,41 @@
+# Node
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+
+# Expo / EAS
+.eas-build-cache/
+ios/
+android/
+*.ipa
+*.apk
+*.aab
+
+# Env
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+._*
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# Local dev cache
+.metro-cache/
+.tmp/
