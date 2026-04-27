@@ -38,4 +38,19 @@ yarn-error.log
 
 # Local dev cache
 .metro-cache/
+.metro-health-check*
 .tmp/
+
+# Expo (auto-generated)
+expo-env.d.ts
+app-example/
+
+# Native artifacts (signing, builds)
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
