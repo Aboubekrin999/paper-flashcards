@@ -1,8 +1,10 @@
 # Paper Flashcards
 
+[![CI](https://github.com/Aboubekrin999/paper-flashcards/actions/workflows/ci.yml/badge.svg)](https://github.com/Aboubekrin999/paper-flashcards/actions/workflows/ci.yml)
+
 > Mobile companion to [paper-companion](https://github.com/Aboubekrin999/paper-companion). Pulls papers from your library, auto-generates spaced-repetition flashcards, schedules daily review. iOS + Android.
 
-**Status:** Planning — build starts June 2026, after Project 2 ships
+**Status:** Expo scaffold in place — feature build starts June 2026, after Project 2 ships
 
 ---
 
