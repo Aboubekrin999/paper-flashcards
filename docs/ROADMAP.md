@@ -1,9 +1,13 @@
 # 2-Week Roadmap to v1
 
 Target: TestFlight build that signs in, lists papers, generates and reviews flashcards.
-Budget: ~10 hours per week, starting after [bilingual-section-classifier](https://github.com/Aboubekrin999/bilingual-section-classifier) ships (early June 2026).
+> **This is the original plan, written in April 2026.** No feature work has
+> started. For the real state of the repo, see the
+> [project README](../README.md#whats-built-today).
 
-Compressed timeline because the backend is already done. Mobile work is purely UI + SRS + offline.
+Planned around roughly 10 hours a week, starting after [bilingual-section-classifier](https://github.com/Aboubekrin999/bilingual-section-classifier) ships.
+
+The timeline is compressed because the backend is reused rather than rebuilt. Mobile work is UI, the SRS scheduler, and offline support.
 
 ---
 

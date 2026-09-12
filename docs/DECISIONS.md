@@ -32,9 +32,9 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 **Decision.** Expo SDK 54+ managed workflow.
 
 **Why.**
-- ~10 hr/week budget — Expo's hot reload + EAS Build saves days vs. local Xcode/Android Studio.
-- v1 has no native modules outside Expo's prebuilt list.
-- Author has an existing Expo build pipeline (`jourfi` developer account) for distribution.
+- On a small weekly time budget, Expo's hot reload and EAS Build save days against a local Xcode / Android Studio setup.
+- v1 needs no native modules outside Expo's prebuilt list.
+- An Expo build pipeline and developer account are already set up for distribution.
 
 **Consequences.** If a native module need emerges, can `expo prebuild` to bare workflow. Reversible.
 

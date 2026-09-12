@@ -18,7 +18,7 @@ This app generates cards from your saved papers automatically, then schedules th
 
 Same user as [paper-companion](https://github.com/Aboubekrin999/paper-companion): students and researchers reading 5+ papers per week who want their reading to *stick* without the overhead of manual card creation.
 
-Built first for the author's own use during AI master's coursework.
+Built first as a tool for my own reading.
 
 ## What v1 does
 
@@ -42,8 +42,8 @@ Built first for the author's own use during AI master's coursework.
 |---|---|
 | One codebase, iOS + Android | No duplicate work |
 | Expo Router | File-based routing matches Next.js mental model — same author, same patterns |
-| EAS Build | TestFlight + Internal Track distribution without local Xcode hell |
-| Hot reload | Fast iteration on a small time budget |
+| EAS Build | TestFlight and Internal Track distribution without maintaining a local Xcode / Android Studio toolchain |
+| Hot reload | Tight feedback loop while learning the framework |
 
 ## What it reuses from paper-companion
 
@@ -102,6 +102,8 @@ npm start             # Expo dev server — scan the QR with Expo Go
 
 ## Author
 
-**Aboubekrin Mohamed Salem** — software engineer and MSc AI candidate, Paris. The mobile surface of a connected three-repo system: web ([paper-companion](https://github.com/Aboubekrin999/paper-companion)), research ([bilingual-section-classifier](https://github.com/Aboubekrin999/bilingual-section-classifier)), and this.
+**Aboubekrin Mohamed Salem** — software engineer, Paris.
+
+The mobile surface of a three-repo system: web ([paper-companion](https://github.com/Aboubekrin999/paper-companion)), research ([bilingual-section-classifier](https://github.com/Aboubekrin999/bilingual-section-classifier)), and this. Built to learn React Native, and to find out how much of an existing backend a second client can genuinely reuse before it needs its own. Reasoning in [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 GitHub: [@Aboubekrin999](https://github.com/Aboubekrin999)
