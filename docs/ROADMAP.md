@@ -14,7 +14,7 @@ The timeline is compressed because the backend is reused rather than rebuilt. Mo
 ## Week 1 — App shell, auth, library, card generation
 *Tentative: June 1 – June 7*
 
-- [ ] `npx create-expo-app` with Expo Router + TypeScript template
+- [x] `npx create-expo-app` with Expo Router + TypeScript template
 - [ ] Tailwind-equivalent styling (NativeWind) configured
 - [ ] Supabase magic-link auth flow (sign in / sign out / session persistence)
 - [ ] Library screen: pulls user's papers from paper-companion's API, list view

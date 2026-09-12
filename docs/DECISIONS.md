@@ -4,6 +4,8 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 
 ---
 
+<a id="adr-001"></a>
+
 ## ADR-001 — Reuse paper-companion's backend instead of a standalone API
 
 **Date:** 2026-04-27
@@ -21,6 +23,8 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 **Consequences.** Mobile project's progress is gated on paper-companion v1 being live. Acceptable — that's the planned dependency order.
 
 ---
+
+<a id="adr-002"></a>
 
 ## ADR-002 — Expo (managed workflow) over bare React Native
 
@@ -40,6 +44,8 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 
 ---
 
+<a id="adr-003"></a>
+
 ## ADR-003 — SM-2 spaced repetition, not FSRS
 
 **Date:** 2026-04-27
@@ -58,6 +64,8 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 
 ---
 
+<a id="adr-004"></a>
+
 ## ADR-004 — TanStack Query, not Redux/Zustand for server state
 
 **Date:** 2026-04-27
@@ -74,6 +82,8 @@ Lightweight ADRs. Each entry: context → decision → consequences.
 **Consequences.** If app-wide UI state needs grow (theme, user preferences), revisit. Not expected for v1.
 
 ---
+
+<a id="adr-005"></a>
 
 ## ADR-005 — SQLite for offline card cache
 
