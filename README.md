@@ -66,7 +66,7 @@ Honest state of the repo, so you can tell the code from the plan.
 | **Architecture decisions** in [`docs/DECISIONS.md`](docs/DECISIONS.md) | Written |
 | Supabase auth, library sync, card generation, SM-2 review loop, offline mode | Not built |
 
-The `app/` directory is still close to the Expo template. Nothing in "What v1 does" below is implemented yet — it is the plan, and it is labelled as such.
+The `app/` directory is still close to the Expo template. Nothing in "What v1 does" above is implemented yet — it is the plan, and it is labelled as such.
 
 Work paused in May 2026 while client delivery took priority. The backend dependency ([paper-companion](https://github.com/Aboubekrin999/paper-companion)'s `/flashcards` endpoint) is also still to be built.
 
