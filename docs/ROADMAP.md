@@ -32,7 +32,7 @@ Compressed timeline because the backend is already done. Mobile work is purely U
 - [ ] EAS Build → TestFlight (iOS) + Internal Track (Android)
 - [ ] README updated with TestFlight invite link + 30-second screen recording
 
-**Checkpoint.** Recruiter clicks the README, scans a TestFlight QR, signs in with magic link, does a real review session. v1 done.
+**Checkpoint.** A tester scans the TestFlight QR, signs in with a magic link, and completes a real review session. v1 done.
 
 ---
 

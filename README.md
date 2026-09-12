@@ -4,7 +4,7 @@
 
 > Mobile companion to [paper-companion](https://github.com/Aboubekrin999/paper-companion). Pulls papers from your library, auto-generates spaced-repetition flashcards, schedules daily review. iOS + Android.
 
-**Status:** Expo scaffold in place — feature build starts June 2026, after Project 2 ships
+**Status:** Expo scaffold and CI only — no feature work has started. This is the least-built of the three repos; see [What's built today](#whats-built-today).
 
 ---
 
@@ -43,7 +43,7 @@ Built first for the author's own use during AI master's coursework.
 | One codebase, iOS + Android | No duplicate work |
 | Expo Router | File-based routing matches Next.js mental model — same author, same patterns |
 | EAS Build | TestFlight + Internal Track distribution without local Xcode hell |
-| Hot reload | 10-hour-per-week budget — fast iteration matters |
+| Hot reload | Fast iteration on a small time budget |
 
 ## What it reuses from paper-companion
 
@@ -53,7 +53,22 @@ This is **the** payoff for splitting the [paper-companion](https://github.com/Ab
 - The `papers` and `chunks` tables — the mobile app reads, doesn't re-ingest
 - A new `/flashcards` endpoint on the FastAPI service, generated cards persisted to a `flashcards` table
 
-Building Project 3 on Project 1's backend is what makes a 2-week timeline realistic.
+Building this app on paper-companion's existing backend is what makes a two-week timeline realistic.
+
+## What's built today
+
+Honest state of the repo, so you can tell the code from the plan.
+
+| Area | State |
+|---|---|
+| **Expo SDK 54 scaffold** with Expo Router and TypeScript | Built — typecheck clean |
+| **CI** — typecheck on every PR | Built |
+| **Architecture decisions** in [`docs/DECISIONS.md`](docs/DECISIONS.md) | Written |
+| Supabase auth, library sync, card generation, SM-2 review loop, offline mode | Not built |
+
+The `app/` directory is still close to the Expo template. Nothing in "What v1 does" below is implemented yet — it is the plan, and it is labelled as such.
+
+Work paused in May 2026 while client delivery took priority. The backend dependency ([paper-companion](https://github.com/Aboubekrin999/paper-companion)'s `/flashcards` endpoint) is also still to be built.
 
 ## Tech stack
 
@@ -72,14 +87,21 @@ Detailed reasoning in [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 ## Roadmap
 
-2-week plan in [`docs/ROADMAP.md`](docs/ROADMAP.md). Compressed because the backend is reused from [paper-companion](https://github.com/Aboubekrin999/paper-companion).
+Two-week plan in [`docs/ROADMAP.md`](docs/ROADMAP.md), compressed because the backend is reused from [paper-companion](https://github.com/Aboubekrin999/paper-companion) rather than rebuilt.
 
 ## Local development
 
-> Documented after the Expo scaffold lands (week 1, day 1).
+```bash
+npm ci
+npm run typecheck     # clean
+npm run lint
+npm start             # Expo dev server — scan the QR with Expo Go
+```
+
+`npm run ios` / `npm run android` open a simulator directly. No environment variables are needed yet; `.env.example` lists the Supabase keys the auth work will require.
 
 ## Author
 
-**Aboubekrin Mohamed Salem** — AI Master's student. Building the third piece of a connected portfolio: web (paper-companion) + research (bilingual-section-classifier) + mobile (this).
+**Aboubekrin Mohamed Salem** — software engineer and MSc AI candidate, Paris. The mobile surface of a connected three-repo system: web ([paper-companion](https://github.com/Aboubekrin999/paper-companion)), research ([bilingual-section-classifier](https://github.com/Aboubekrin999/bilingual-section-classifier)), and this.
 
 GitHub: [@Aboubekrin999](https://github.com/Aboubekrin999)
